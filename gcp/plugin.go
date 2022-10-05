@@ -108,6 +108,7 @@ func Plugin(ctx context.Context) *plugin.Plugin {
 			"gcp_sql_database_instance_metric_cpu_utilization":        tableGcpSQLDatabaseInstanceMetricCpuUtilization(ctx),
 			"gcp_sql_database_instance_metric_cpu_utilization_daily":  tableGcpSQLDatabaseInstanceMetricCpuUtilizationDaily(ctx),
 			"gcp_sql_database_instance_metric_cpu_utilization_hourly": tableGcpSQLDatabaseInstanceMetricCpuUtilizationHourly(ctx),
+			"gcp_sql_database_instance_metric_questions_daily":        tableGcpSQLDatabaseInstanceMetricQuestionsDaily(ctx),
 			"gcp_storage_bucket":                                      tableGcpStorageBucket(ctx),
 			/*
 				https://github.com/turbot/steampipe/issues/108
